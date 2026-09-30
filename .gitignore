@@ -1,0 +1,28 @@
+# Jupyter / Python
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+
+# Spark local artefacts
+spark-warehouse/
+metastore_db/
+derby.log
+*.crc
+
+# Dataset and generated data (recreated by running the notebook, see data/README.md)
+data/*
+!data/README.md
+
+# Structured Streaming checkpoints and sink output (recreated on each run)
+checkpoints/
+output/
+
+# The persisted model in models/ IS committed (required by the brief)
+
+# OS / editor / secrets
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.env
+kaggle.json
